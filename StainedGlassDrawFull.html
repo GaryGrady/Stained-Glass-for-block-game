@@ -412,7 +412,7 @@ function putimgdata()
 function calcmaterials()
 {
 	var materials = {};
-	for (i=0;i<glassblocks.length-1;i++)
+	for (i=0;i<glassblocks.length;i++)
 	{
 		materials[glassblocks[i].color] = 0;
 	}
@@ -421,7 +421,7 @@ function calcmaterials()
 		materials[gridorgins[i].color] += 1;
 	}
 	strmaterialcosts = "";
-	for (i=0;i<glassblocks.length-1;i++)
+	for (i=0;i<glassblocks.length;i++)
 	{
 		if (materials[glassblocks[i].color] > 0)
 		{
