@@ -103,7 +103,7 @@ function loaddglassblocks()
 }
 
 
-var debugcode = true;
+var debugcode = false;
 
 
 function moused()
@@ -261,7 +261,11 @@ function draw()
 	//drawgrid();
 	drawblocks();
 	drawgrid();
- 	drawdebugcode();
+	if (debugcode)
+	{
+		drawdebugcode();
+	}
+ 	
 	
 } 
 
@@ -358,7 +362,12 @@ function updategridsize()
 	gridwidth =  mygridwidth.value;
 	mygridheight = document.getElementById('myheight');
 	gridheight = mygridheight.value;
-	blocksize = (canvas.width - gridwidth)/gridwidth;
+	blocksize = Math.floor((canvas.width - gridwidth -10)/gridwidth);
+	blocksizeh = Math.floor((canvas.height - gridheight -70)/gridheight);
+	if (blocksizeh < blocksize)
+	{
+		blocksize = blocksizeh;
+	}
 	initgrid()
 }
 
