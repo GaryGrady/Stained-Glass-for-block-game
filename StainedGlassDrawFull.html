@@ -401,9 +401,9 @@ function putimgdata()
 	mygridheight = document.getElementById('myheight');
 	mygridheight.value = gridheight;
 	blocksize = (canvas.width - gridwidth)/gridwidth;
-	//initgrid();
-	gridorgins = []
-	j = 0
+	updategridsize();
+	gridorgins = [];
+	j = 0;
 	for (i=1;i<arryimgvals.length-1;i++)
 	{
 		
