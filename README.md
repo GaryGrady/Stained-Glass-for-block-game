@@ -3,12 +3,16 @@ A very simple drawing app for stained glass in popular block game
 
 
 
-To use just download the html and open with a browser.  
+To use download the html and sgimages folder make sure the sgimages folder is in the same folder as the html.
+
+Open the html file in a web browser.  
 
 click to select the color.
 
 click or click and drag to change color on grid.
 
+Tools
+select either the draw tool (paintbrush) or the floodfill tool (bucket)
 
 Set your rectangle size and click update - default is 16 x 16  
 clear resets the blocks to clear blocks  
